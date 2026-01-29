@@ -1,0 +1,25 @@
+# Compiled class files
+bin/
+*.class
+
+# Package directories
+target/
+
+# IDEs and editors
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+out/
+
+# Misc
+hs_err_pid*
