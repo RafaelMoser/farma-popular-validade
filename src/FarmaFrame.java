@@ -89,6 +89,7 @@ public class FarmaFrame extends JFrame {
 
 		//main interface
 		setUndecorated(true);
+		setType(Window.Type.UTILITY);
 		setComponentStyle(mainLabel);
 		setComponentStyle(calcLabel1);
 		setComponentStyle(calcTextField);
