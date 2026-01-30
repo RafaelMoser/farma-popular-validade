@@ -23,7 +23,7 @@ public class Utils {
         sb.append(" Próxima retirada: ");
         sb.append(dates[2].format(formatter));
         sb.append(" (");
-        sb.append(weekdaysPTBR[dates[2].getDayOfWeek().getValue()]);
+        sb.append(weekdaysPTBR[dates[2].getDayOfWeek().getValue()%7]);
         sb.append(")");
 
         return sb.toString();

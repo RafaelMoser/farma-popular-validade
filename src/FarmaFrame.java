@@ -68,6 +68,9 @@ public class FarmaFrame extends JFrame {
 		public void remove(FilterBypass fb, int offset, int length) throws BadLocationException {
 			String current = fb.getDocument().getText(0, fb.getDocument().getLength());
 			StringBuilder proposed = new StringBuilder(current);
+			if(offset== 2 || offset == 5){
+				offset--;
+			}
 			proposed.delete(offset, offset + length);
 			String digits = digitsOnly(proposed.toString());
 			String formatted = formatDigits(digits);
@@ -202,7 +205,6 @@ public class FarmaFrame extends JFrame {
 			calcLabel2.setText(text);
 			pack();
 			setLocation((Toolkit.getDefaultToolkit().getScreenSize().width)/2 - (getSize().width)/2,0);
-			System.out.println(getSize());
 		});
 	}
 
